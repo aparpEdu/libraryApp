@@ -5,7 +5,7 @@ import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class PaperBook extends Book implements Readable{
+public class PaperBook extends Book {
     private int numberOfAvailableCopies;
     private int totalNumberOfCopies;
 }

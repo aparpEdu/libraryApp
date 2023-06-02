@@ -4,23 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52f76667-2208-4c2d-b28c-267b6da89f41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/LibraryApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/author/AliveAuthor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/author/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/book/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/book/DownloadableBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/book/ElectronicBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/book/Genre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/book/PaperBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/LibraryAppTest.java" afterDir="false" />
+    <list default="true" id="52f76667-2208-4c2d-b28c-267b6da89f41" name="Changes" comment="Init">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/author/DeceasedAuthor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/country/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/security/Authentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/security/AuthenticationHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/security/EncodedCredentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/security/Encoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/security/EncodingHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/user/RegisteredUsers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/user/UserHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/security/AuthenticationHelperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/security/AuthenticationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/security/EncodedCredentialsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/security/EncoderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/security/EncodingHelperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/user/RegisteredUsersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/user/UserHelperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/LibraryApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/LibraryApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/author/AliveAuthor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/author/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/author/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/book/PaperBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/book/PaperBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/book/Readable.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +39,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="JUnit3 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -61,13 +73,118 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "c41600b14ee5b48559569252886f0fde",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.library.user" />
+      <recent name="org.library.security" />
+      <recent name="org.library.credentials" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserHelperTest.shouldReturnAUserWhenFound">
+    <configuration name="AuthenticationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libraryApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.library.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.library.security" />
+      <option name="MAIN_CLASS_NAME" value="org.library.security.AuthenticationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthenticationTest.userShouldNotBeSignedInWhenInputtingWrongPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libraryApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.library.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.library.security" />
+      <option name="MAIN_CLASS_NAME" value="org.library.security.AuthenticationTest" />
+      <option name="METHOD_NAME" value="userShouldNotBeSignedInWhenInputtingWrongPassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisteredUsersTest.shouldBeAbleToMakeOnlyOneInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libraryApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.library.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.library.user" />
+      <option name="MAIN_CLASS_NAME" value="org.library.user.RegisteredUsersTest" />
+      <option name="METHOD_NAME" value="shouldBeAbleToMakeOnlyOneInstance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserHelperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libraryApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.library.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.library.user" />
+      <option name="MAIN_CLASS_NAME" value="org.library.user.UserHelperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserHelperTest.shouldReturnAUserWhenFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libraryApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.library.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.library.user" />
+      <option name="MAIN_CLASS_NAME" value="org.library.user.UserHelperTest" />
+      <option name="METHOD_NAME" value="shouldReturnAUserWhenFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserHelperTest.shouldReturnAUserWhenFound" />
+        <item itemvalue="JUnit.UserHelperTest" />
+        <item itemvalue="JUnit.RegisteredUsersTest.shouldBeAbleToMakeOnlyOneInstance" />
+        <item itemvalue="JUnit.AuthenticationTest" />
+        <item itemvalue="JUnit.AuthenticationTest.userShouldNotBeSignedInWhenInputtingWrongPassword" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,11 +193,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685558224217</updated>
-      <workItem from="1685558225279" duration="3645000" />
+      <workItem from="1685558225279" duration="6889000" />
+      <workItem from="1685609610140" duration="41889000" />
+      <workItem from="1685693338698" duration="7936000" />
     </task>
+    <task id="LOCAL-00001" summary="Init">
+      <created>1685562181195</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685562181195</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/libraryApp$EncodedCredentialsTest.ic" NAME="EncodedCredentialsTest Coverage Results" MODIFIED="1685629014788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.library.credentials.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/libraryApp$AuthenticationTest.ic" NAME="AuthenticationTest Coverage Results" MODIFIED="1685696534269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.library.security.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/libraryApp$EncoderTest.ic" NAME="EncoderTest Coverage Results" MODIFIED="1685628370188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.library.credentials.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/libraryApp$UserHelperTest.ic" NAME="UserHelperTest Coverage Results" MODIFIED="1685698707729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.library.user.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/libraryApp$CryptHelperTest.ic" NAME="EncodingHelperTest Coverage Results" MODIFIED="1685640103525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.library.security.*</FILTER>
+    </SUITE>
   </component>
 </project>
