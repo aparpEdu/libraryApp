@@ -7,4 +7,6 @@ import lombok.EqualsAndHashCode;
 @Data
 public class ElectronicBook extends Book{
     private String readingLink;
+    private String downloadLink;
+
 }

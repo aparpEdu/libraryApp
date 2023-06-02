@@ -6,7 +6,7 @@ import org.library.author.Author;
 import java.util.Set;
 
 @Data
-public abstract class Book {
+public class Book {
     private String title;
     private Set<Author> authors;
     private Set<Genre> genres;
