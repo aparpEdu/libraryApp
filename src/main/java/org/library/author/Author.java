@@ -6,25 +6,29 @@ import org.library.country.Country;
 import java.time.LocalDate;
 @Getter
 public class Author {
-    private final String name;
+    private final String firstName;
+    private final String lastName;
     private final Country countryOfBirth;
     private final LocalDate dateOfBirth;
     private final LocalDate dateOfPassing;
 
-    private Author(String name, Country countryOfBirth, LocalDate dateOfBirth, LocalDate dateOfPassing) {
-        this.name = name;
+    private Author(String firstName, String lastName, Country countryOfBirth, LocalDate dateOfBirth, LocalDate dateOfPassing) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.countryOfBirth = countryOfBirth;
         this.dateOfBirth = dateOfBirth;
         this.dateOfPassing = dateOfPassing;
     }
     public static class AuthorBuilder{
-        private final String name;
+        private final String firstName;
+        private final String lastName;
         private final Country countryOfBirth;
         private final LocalDate dateOfBirth;
         private LocalDate dateOfPassing;
 
-        public AuthorBuilder(String name, Country countryOfBirth, LocalDate dateOfBirth) {
-            this.name = name;
+        public AuthorBuilder(String firstName, String lastName, Country countryOfBirth, LocalDate dateOfBirth) {
+            this.firstName = firstName;
+            this.lastName = lastName;
             this.countryOfBirth = countryOfBirth;
             this.dateOfBirth = dateOfBirth;
         }
@@ -33,7 +37,7 @@ public class Author {
             return this;
         }
         public Author build(){
-            return new Author(name,countryOfBirth,dateOfBirth,dateOfPassing);
+            return new Author(firstName, lastName, countryOfBirth,dateOfBirth,dateOfPassing);
         }
     }
 }

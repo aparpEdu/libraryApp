@@ -1,10 +1,10 @@
 package org.library.checkout;
 
+import org.library.book.Book;
 import org.library.book.ElectronicBook;
-import org.library.book.PaperBook;
 
 public class UserBookStatusHelper {
-    public static void mapBorrowedBookToUser(String username, PaperBook paperBook){
+    public static void mapBorrowedBookToUser(String username, Book paperBook){
         if(username != null) {
             LoanedBooks.getInstance().getBorrowedBooksByUser().put(username, paperBook);
         }
