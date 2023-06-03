@@ -3,6 +3,7 @@ package org.library.checkout;
 import org.library.book.Book;
 import org.library.bookmanagement.StackManager;
 import org.library.bookmanagement.StackedBooks;
+import org.library.system.UserBookHistoryHelper;
 import org.library.user.User;
 
 import java.time.LocalDate;
@@ -15,6 +16,7 @@ public class LoanManager {
        if(loanedBook.isPresent()){
            LoanedBook loanedBookToAdd = loanedBook.get();
            LoanedBooks.getInstance().getBorrowedBooksByUsers().put(loanedBookToAdd, user.getUsername());
+           UserBookHistoryHelper.addLoanedBookToUserHistory(user.getUsername(), loanedBookToAdd);
            StackManager.removeBook(book);
            System.out.println("Loaned Book successfully added to System");
        }else{

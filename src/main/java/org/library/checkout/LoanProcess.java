@@ -38,7 +38,7 @@ public class LoanProcess {
                 System.out.println("This book was not borrowed from here!");
             }
         }else {
-            System.out.println("User not logged in");
+            System.out.println("User not logged in!");
         }
     }
 }

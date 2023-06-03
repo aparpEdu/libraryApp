@@ -1,8 +1,7 @@
-package org.library.bookmanagement;
+package org.library.cloud;
 
 import org.junit.jupiter.api.Test;
 import org.library.author.Author;
-import org.library.book.Book;
 import org.library.book.ElectronicBook;
 import org.library.book.Genre;
 import org.library.country.Country;
@@ -10,7 +9,8 @@ import org.library.country.Country;
 import java.time.LocalDate;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CloudHelperTest {
 

@@ -1,4 +1,4 @@
-package org.library.bookmanagement;
+package org.library.cloud;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,6 +1,5 @@
-package org.library.bookmanagement;
+package org.library.cloud;
 
-import org.library.book.Book;
 import org.library.book.ElectronicBook;
 
 import java.util.Optional;

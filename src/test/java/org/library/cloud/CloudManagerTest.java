@@ -1,4 +1,4 @@
-package org.library.bookmanagement;
+package org.library.cloud;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,9 +10,10 @@ import org.library.country.Country;
 import java.time.LocalDate;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class CloudManagerTest {
+public class CloudManagerTest {
 
     @BeforeEach
     void setUp() {
@@ -49,7 +50,6 @@ class CloudManagerTest {
     @Test
     void eBookShouldBeFoundToWhenCorrectIsbnInputGiven() {
         ElectronicBook book = new ElectronicBook(); //creating a new book
-        //setting up data
         book.setTitle("Yep");
         book.setIsbn("1231231aDs");
         CloudBooks.getInstance().getBooksInCloud().add(book); // adding example book
