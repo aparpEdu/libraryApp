@@ -4,24 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52f76667-2208-4c2d-b28c-267b6da89f41" name="Changes" comment="Library architecture">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CopiesManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CopiesManagerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/BookManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/CopiesManagerImplTest.java" afterDir="false" />
+    <list default="true" id="52f76667-2208-4c2d-b28c-267b6da89f41" name="Changes" comment="Book management">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanDelay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanProcess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanedBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/system/UserBookHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/system/UserBookHistoryHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/system/UserBookStatusHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/CloudBooksTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/CloudHelperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/CloudManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/StackManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/StackedBooksTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/checkout/LoanDelayTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/library/LibraryApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/LibraryApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/author/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/author/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/book/PaperBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/BookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/BookManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CloudBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CloudBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CloudHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CloudHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CloudManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CloudManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/StackHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/StackManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/StackManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CopiesManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CopiesManagerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanedBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanedBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/checkout/UserBookStatusHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/checkout/UserBookStatusHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/checkout/UserBookStatusHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/CopiesManagerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/CopiesManagerImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +38,8 @@
         <option value="Enum" />
         <option value="JUnit3 Test Class" />
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -83,14 +87,15 @@
       <recent name="junit.framework.TestCase" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.library.checkout" />
       <recent name="org.library.bookmanagement" />
       <recent name="org.library.user" />
       <recent name="org.library.security" />
       <recent name="org.library.credentials" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.library in libraryApp">
-    <configuration name="BookManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CopiesManagerImplTest.shouldReturnTotalNumberOfCopies">
+    <configuration name="CloudManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryApp" />
       <extension name="coverage">
         <pattern>
@@ -99,45 +104,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.library.bookmanagement" />
-      <option name="MAIN_CLASS_NAME" value="org.library.bookmanagement.BookManagerTest" />
+      <option name="MAIN_CLASS_NAME" value="org.library.bookmanagement.CloudManagerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <dir value="$PROJECT_DIR$/src/test/java/org/library" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookManagerTest.shouldReturnFalseWithMissingBookData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libraryApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.library.bookmanagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.library.bookmanagement" />
-      <option name="MAIN_CLASS_NAME" value="org.library.bookmanagement.BookManagerTest" />
-      <option name="METHOD_NAME" value="shouldReturnFalseWithMissingBookData" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookManagerTest.shouldReturnTrueWhenNoMissingBookData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libraryApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.library.bookmanagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.library.bookmanagement" />
-      <option name="MAIN_CLASS_NAME" value="org.library.bookmanagement.BookManagerTest" />
-      <option name="METHOD_NAME" value="shouldReturnTrueWhenNoMissingBookData" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CopiesManagerImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CopiesManagerImplTest.shouldReturnNumberOfAvailableCopies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryApp" />
       <extension name="coverage">
         <pattern>
@@ -147,7 +121,40 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.library.bookmanagement" />
       <option name="MAIN_CLASS_NAME" value="org.library.bookmanagement.CopiesManagerImplTest" />
+      <option name="METHOD_NAME" value="shouldReturnNumberOfAvailableCopies" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CopiesManagerImplTest.shouldReturnTotalNumberOfCopies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libraryApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.library.bookmanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.library.bookmanagement" />
+      <option name="MAIN_CLASS_NAME" value="org.library.bookmanagement.CopiesManagerImplTest" />
+      <option name="METHOD_NAME" value="shouldReturnTotalNumberOfCopies" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StackManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libraryApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.library.bookmanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.library.bookmanagement" />
+      <option name="MAIN_CLASS_NAME" value="org.library.bookmanagement.StackManagerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <dir value="$PROJECT_DIR$/src/test/java/org/library" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CopiesManagerImplTest.shouldReturnTotalNumberOfCopies" />
+        <item itemvalue="JUnit.CopiesManagerImplTest.shouldReturnNumberOfAvailableCopies" />
+        <item itemvalue="JUnit.CloudManagerTest" />
         <item itemvalue="JUnit.library in libraryApp" />
-        <item itemvalue="JUnit.CopiesManagerImplTest" />
-        <item itemvalue="JUnit.BookManagerTest" />
-        <item itemvalue="JUnit.BookManagerTest.shouldReturnTrueWhenNoMissingBookData" />
-        <item itemvalue="JUnit.BookManagerTest.shouldReturnFalseWithMissingBookData" />
+        <item itemvalue="JUnit.StackManagerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +188,9 @@
       <workItem from="1685558225279" duration="6889000" />
       <workItem from="1685609610140" duration="41889000" />
       <workItem from="1685693338698" duration="7968000" />
-      <workItem from="1685721238636" duration="21121000" />
+      <workItem from="1685721238636" duration="21472000" />
+      <workItem from="1685750998477" duration="204000" />
+      <workItem from="1685784345946" duration="20377000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1685562181195</created>
@@ -204,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685735631037</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Book management">
+      <created>1685745632630</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685745632630</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +230,8 @@
     <MESSAGE value="Init" />
     <MESSAGE value="Security" />
     <MESSAGE value="Library architecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="Library architecture" />
+    <MESSAGE value="Book management" />
+    <option name="LAST_COMMIT_MESSAGE" value="Book management" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/libraryApp$EncodedCredentialsTest.ic" NAME="EncodedCredentialsTest Coverage Results" MODIFIED="1685629014788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
