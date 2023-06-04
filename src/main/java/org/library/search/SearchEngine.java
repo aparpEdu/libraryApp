@@ -1,6 +1,5 @@
 package org.library.search;
 
-import org.library.author.Author;
 import org.library.book.Book;
 import org.library.book.Genre;
 

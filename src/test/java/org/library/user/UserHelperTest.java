@@ -19,7 +19,7 @@ class UserHelperTest {
         wrongUser.setUsername("GabeNewell");
         RegisteredUsers.getInstance().getUsers().add(wrongUser);//adding another user for example
         RegisteredUsers.getInstance().getUsers().add(user); // adding user to the system
-        String foundUsername = UserHelper.findUserByUsername(user.getUsername()).orElseGet(() -> user).getUsername();
+        String foundUsername = UserHelper.findUserByUsername(user.getUsername()).orElse(user).getUsername();
         assertEquals(username, foundUsername);
     }
 }

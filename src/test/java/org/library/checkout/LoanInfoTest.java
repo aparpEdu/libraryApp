@@ -36,7 +36,7 @@ class LoanInfoTest {
 
         LoanInfo.getAllLoanedBooksByUser(user);//getting output of every return date
         String output = outputStream.toString().trim();
-        String expectedOutput =loanedBook.getBook().getTitle()+"| return date: " + LocalDate.now().toString();
+        String expectedOutput =loanedBook.getBook().getTitle()+"| return date: " + LocalDate.now();
         assertEquals(expectedOutput, output);
     }
 }

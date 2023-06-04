@@ -3,12 +3,10 @@ package org.library.bookmanagement;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.library.book.Book;
-import org.library.book.ElectronicBook;
 
 import java.util.List;
-import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
  public class StackedBooksTest {
 

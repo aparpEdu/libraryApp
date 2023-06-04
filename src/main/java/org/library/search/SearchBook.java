@@ -25,6 +25,6 @@ public class SearchBook {
         return searchEngine.findBooksByAuthorFirstName(firstName);
     }
     public static Optional<List<Book>> searchBooksByAuthorLastName(String lastName){
-        return searchEngine.findBooksByAuthorFirstName(lastName);
+        return searchEngine.findBooksByAuthorLastName(lastName);
     }
 }

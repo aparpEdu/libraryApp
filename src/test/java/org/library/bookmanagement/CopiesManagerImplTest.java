@@ -2,18 +2,12 @@ package org.library.bookmanagement;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.library.author.Author;
 import org.library.book.Book;
-import org.library.book.Genre;
 import org.library.checkout.LoanedBook;
 import org.library.checkout.LoanedBooks;
 import org.library.user.User;
 
-import javax.print.attribute.standard.Copies;
-import java.util.List;
-import java.util.Set;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CopiesManagerImplTest {
 

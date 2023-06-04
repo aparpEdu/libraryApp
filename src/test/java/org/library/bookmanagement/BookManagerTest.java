@@ -36,7 +36,7 @@ class BookManagerTest {
     @Test
     void shouldReturnTrueWhenBookHasAReadingLink() {
         ElectronicBook book = new ElectronicBook();
-        book.setReadingLink("www.netflix.com");;
+        book.setReadingLink("www.netflix.com");
         boolean readLinkIsAvailable = BookManager.readLinkAvailable(book);
         assertTrue(readLinkIsAvailable);
     }

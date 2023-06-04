@@ -4,36 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52f76667-2208-4c2d-b28c-267b6da89f41" name="Changes" comment="Checkout">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/cloud/ElectronicReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/search/SearchBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/search/SearchEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/search/SearchEngineImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/checkout/LoanHelperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/checkout/LoanInfoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/checkout/LoanManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/checkout/LoanProcessTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/checkout/LoanedBooksTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/cloud/ElectronicReaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/search/SearchBookTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/system/UserBookHistoryHelperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/library/system/UserBookHistoryTest.java" afterDir="false" />
+    <list default="true" id="52f76667-2208-4c2d-b28c-267b6da89f41" name="Changes" comment="Search engine">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CloudBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/cloud/CloudBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CloudHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/cloud/CloudHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CloudManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/cloud/CloudManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanDelay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanDelay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/system/UserBookHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/system/UserBookHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/system/UserBookHistoryHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/system/UserBookHistoryHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/system/UserBookStatusHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/CloudBooksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/cloud/CloudBooksTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/CloudHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/cloud/CloudHelperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/CloudManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/cloud/CloudManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/checkout/LoanDelayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/checkout/LoanDelayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/search/SearchBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/search/SearchBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/search/SearchEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/search/SearchEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/BookManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/BookManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/search/SearchBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/search/SearchBookTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,82 +82,82 @@
       <recent name="org.library.bookmanagement" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserBookHistoryHelperTest.shouldNotAddLoanedBookWhenNotGivenUsername">
-    <configuration name="ElectronicReaderTest.shouldNotAddReadEBookToUserHistoryWhenMissingBookData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserHelperTest.shouldReturnAUserWhenFound">
+    <configuration name="LoanManagerTest.shouldReturnedBorrowedBookBackToTheStacks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.library.cloud.*" />
+          <option name="PATTERN" value="org.library.checkout.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.library.cloud" />
-      <option name="MAIN_CLASS_NAME" value="org.library.cloud.ElectronicReaderTest" />
-      <option name="METHOD_NAME" value="shouldNotAddReadEBookToUserHistoryWhenMissingBookData" />
+      <option name="PACKAGE_NAME" value="org.library.checkout" />
+      <option name="MAIN_CLASS_NAME" value="org.library.checkout.LoanManagerTest" />
+      <option name="METHOD_NAME" value="shouldReturnedBorrowedBookBackToTheStacks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserBookHistoryHelperTest.shouldAddLoanedBookWhenGivenUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoanProcessTest.userShouldBeAbleToReturnABookWhenReturningCorrectBookAndLoggedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.library.system.*" />
+          <option name="PATTERN" value="org.library.checkout.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.library.system" />
-      <option name="MAIN_CLASS_NAME" value="org.library.system.UserBookHistoryHelperTest" />
-      <option name="METHOD_NAME" value="shouldAddLoanedBookWhenGivenUsername" />
+      <option name="PACKAGE_NAME" value="org.library.checkout" />
+      <option name="MAIN_CLASS_NAME" value="org.library.checkout.LoanProcessTest" />
+      <option name="METHOD_NAME" value="userShouldBeAbleToReturnABookWhenReturningCorrectBookAndLoggedIn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserBookHistoryHelperTest.shouldAddReadBookToUserHistory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchBookTest.shouldReturnBooksWithGivenAuthorFirstName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.library.system.*" />
+          <option name="PATTERN" value="org.library.search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.library.system" />
-      <option name="MAIN_CLASS_NAME" value="org.library.system.UserBookHistoryHelperTest" />
-      <option name="METHOD_NAME" value="shouldAddReadBookToUserHistory" />
+      <option name="PACKAGE_NAME" value="org.library.search" />
+      <option name="MAIN_CLASS_NAME" value="org.library.search.SearchBookTest" />
+      <option name="METHOD_NAME" value="shouldReturnBooksWithGivenAuthorFirstName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserBookHistoryHelperTest.shouldNotAddLoanedBookWhenNotGivenUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchBookTest.shouldReturnBooksWithGivenAuthorLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.library.system.*" />
+          <option name="PATTERN" value="org.library.search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.library.system" />
-      <option name="MAIN_CLASS_NAME" value="org.library.system.UserBookHistoryHelperTest" />
-      <option name="METHOD_NAME" value="shouldNotAddLoanedBookWhenNotGivenUsername" />
+      <option name="PACKAGE_NAME" value="org.library.search" />
+      <option name="MAIN_CLASS_NAME" value="org.library.search.SearchBookTest" />
+      <option name="METHOD_NAME" value="shouldReturnBooksWithGivenAuthorLastName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserBookHistoryHelperTest.shouldNotAddReadBookToUserHistoryWhenNotGivenUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserHelperTest.shouldReturnAUserWhenFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.library.system.*" />
+          <option name="PATTERN" value="org.library.user.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.library.system" />
-      <option name="MAIN_CLASS_NAME" value="org.library.system.UserBookHistoryHelperTest" />
-      <option name="METHOD_NAME" value="shouldNotAddReadBookToUserHistoryWhenNotGivenUsername" />
+      <option name="PACKAGE_NAME" value="org.library.user" />
+      <option name="MAIN_CLASS_NAME" value="org.library.user.UserHelperTest" />
+      <option name="METHOD_NAME" value="shouldReturnAUserWhenFound" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserBookHistoryHelperTest.shouldNotAddLoanedBookWhenNotGivenUsername" />
-        <item itemvalue="JUnit.UserBookHistoryHelperTest.shouldAddLoanedBookWhenGivenUsername" />
-        <item itemvalue="JUnit.UserBookHistoryHelperTest.shouldNotAddReadBookToUserHistoryWhenNotGivenUsername" />
-        <item itemvalue="JUnit.UserBookHistoryHelperTest.shouldAddReadBookToUserHistory" />
-        <item itemvalue="JUnit.ElectronicReaderTest.shouldNotAddReadEBookToUserHistoryWhenMissingBookData" />
+        <item itemvalue="JUnit.UserHelperTest.shouldReturnAUserWhenFound" />
+        <item itemvalue="JUnit.LoanProcessTest.userShouldBeAbleToReturnABookWhenReturningCorrectBookAndLoggedIn" />
+        <item itemvalue="JUnit.LoanManagerTest.shouldReturnedBorrowedBookBackToTheStacks" />
+        <item itemvalue="JUnit.SearchBookTest.shouldReturnBooksWithGivenAuthorLastName" />
+        <item itemvalue="JUnit.SearchBookTest.shouldReturnBooksWithGivenAuthorFirstName" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +186,7 @@
       <workItem from="1685693338698" duration="7968000" />
       <workItem from="1685721238636" duration="21472000" />
       <workItem from="1685750998477" duration="204000" />
-      <workItem from="1685784345946" duration="41817000" />
+      <workItem from="1685784345946" duration="45640000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1685562181195</created>
@@ -246,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685807486013</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Search engine">
+      <created>1685831203315</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685831203315</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +242,8 @@
     <MESSAGE value="Library architecture" />
     <MESSAGE value="Book management" />
     <MESSAGE value="Checkout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Checkout" />
+    <MESSAGE value="Search engine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search engine" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/libraryApp$EncodedCredentialsTest.ic" NAME="EncodedCredentialsTest Coverage Results" MODIFIED="1685629014788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
