@@ -1,5 +1,6 @@
 package org.library.security;
 
+import org.library.exception.MissingUserDataException;
 import org.library.user.RegisteredUsers;
 import org.library.user.User;
 import org.library.user.UserHelper;
@@ -11,7 +12,12 @@ import static org.library.security.EncodingHelper.getEncryptedPassword;
 public class AuthenticationHelper {
     public static boolean isUsernamePresent(String username){
         RegisteredUsers registeredUsers = RegisteredUsers.getInstance();
-        return registeredUsers.getUsers().stream().anyMatch(user -> user.getUsername().equals(username));
+        try {
+            return registeredUsers.getUsers().stream().anyMatch(user -> user.getUsername().equals(username));
+        }catch (NullPointerException exception){
+            throw new MissingUserDataException("Missing username!");
+        }
+
     }
     public static boolean isCorrectPassword(String password, String username){
         Optional<User> foundUser = UserHelper.findUserByUsername(username);
@@ -23,7 +29,12 @@ public class AuthenticationHelper {
     }
     public static boolean isEmailPresent(String email){
         RegisteredUsers registeredUsers = RegisteredUsers.getInstance();
-        return registeredUsers.getUsers().stream().anyMatch(user -> user.getEmail().equals(email));
+        try {
+            return registeredUsers.getUsers().stream().anyMatch(user -> user.getEmail().equals(email));
+        }catch (NullPointerException exception){
+            throw  new MissingUserDataException("Missing email");
+        }
+
     }
     public static void setUserLoggedIn(String username){
         Optional<User> foundUser = UserHelper.findUserByUsername(username);

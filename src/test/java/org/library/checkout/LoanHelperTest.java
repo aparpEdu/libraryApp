@@ -5,6 +5,7 @@ import org.library.author.Author;
 import org.library.book.Book;
 import org.library.book.Genre;
 import org.library.country.Country;
+import org.library.exception.MissingBookDataException;
 import org.library.user.User;
 
 import java.time.LocalDate;
@@ -81,5 +82,10 @@ class LoanHelperTest {
         LoanHelper.adjustReturnDate(loanedBook,2);
         LocalDate returnDateAfterAdjustment = loanedBook.getReturnDate();
         assertTrue(returnDateBeforeAdjustment.isBefore(returnDateAfterAdjustment));
+    }
+    @Test
+    void shouldThrowExceptionWhenAdjustingWithReturnDateMissing() {
+        LoanedBook loanedBook = new LoanedBook();
+        assertThrows(MissingBookDataException.class, () -> LoanHelper.adjustReturnDate(loanedBook,2));
     }
 }

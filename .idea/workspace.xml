@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52f76667-2208-4c2d-b28c-267b6da89f41" name="Changes" comment="Search engine">
+    <list default="true" id="52f76667-2208-4c2d-b28c-267b6da89f41" name="Changes" comment="Prototype">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/exception/MissingBookDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/library/exception/MissingUserDataException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CopiesManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/CopiesManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/StackManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/bookmanagement/StackManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/checkout/LoanHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/search/SearchBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/search/SearchBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/search/SearchEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/search/SearchEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/BookManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/BookManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/search/SearchBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/search/SearchBookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/cloud/CloudManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/cloud/CloudManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/search/SearchEngineImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/search/SearchEngineImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/security/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/security/Authentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/security/AuthenticationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/security/AuthenticationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/CopiesManagerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/CopiesManagerImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/StackManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/bookmanagement/StackManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/checkout/LoanHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/checkout/LoanHelperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/cloud/CloudManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/cloud/CloudManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/security/AuthenticationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/security/AuthenticationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/library/security/EncodingHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/library/security/EncodingHelperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +34,8 @@
         <option value="JUnit3 Test Class" />
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,82 +92,81 @@
       <recent name="org.library.bookmanagement" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserHelperTest.shouldReturnAUserWhenFound">
-    <configuration name="LoanManagerTest.shouldReturnedBorrowedBookBackToTheStacks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CloudManagerTest.shouldThrowExceptionWhenNoIsbnIsGiven">
+    <configuration name="CloudManagerTest.eBookShouldBeFoundToWhenCorrectIsbnInputGiven" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.library.checkout.*" />
+          <option name="PATTERN" value="org.library.cloud.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.library.checkout" />
-      <option name="MAIN_CLASS_NAME" value="org.library.checkout.LoanManagerTest" />
-      <option name="METHOD_NAME" value="shouldReturnedBorrowedBookBackToTheStacks" />
+      <option name="PACKAGE_NAME" value="org.library.cloud" />
+      <option name="MAIN_CLASS_NAME" value="org.library.cloud.CloudManagerTest" />
+      <option name="METHOD_NAME" value="eBookShouldBeFoundToWhenCorrectIsbnInputGiven" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoanProcessTest.userShouldBeAbleToReturnABookWhenReturningCorrectBookAndLoggedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CloudManagerTest.shouldThrowExceptionWhenNoIsbnIsGiven" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.library.checkout.*" />
+          <option name="PATTERN" value="org.library.cloud.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.library.checkout" />
-      <option name="MAIN_CLASS_NAME" value="org.library.checkout.LoanProcessTest" />
-      <option name="METHOD_NAME" value="userShouldBeAbleToReturnABookWhenReturningCorrectBookAndLoggedIn" />
+      <option name="PACKAGE_NAME" value="org.library.cloud" />
+      <option name="MAIN_CLASS_NAME" value="org.library.cloud.CloudManagerTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenNoIsbnIsGiven" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchBookTest.shouldReturnBooksWithGivenAuthorFirstName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EncodingHelperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.library.search.*" />
+          <option name="PATTERN" value="org.library.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.library.search" />
-      <option name="MAIN_CLASS_NAME" value="org.library.search.SearchBookTest" />
-      <option name="METHOD_NAME" value="shouldReturnBooksWithGivenAuthorFirstName" />
+      <option name="PACKAGE_NAME" value="org.library.security" />
+      <option name="MAIN_CLASS_NAME" value="org.library.security.EncodingHelperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EncodingHelperTest.shouldNotReturnEncodedPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libraryApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.library.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.library.security" />
+      <option name="MAIN_CLASS_NAME" value="org.library.security.EncodingHelperTest" />
+      <option name="METHOD_NAME" value="shouldNotReturnEncodedPassword" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchBookTest.shouldReturnBooksWithGivenAuthorLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EncodingHelperTest.shouldReturnCorrespondingEncodedPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libraryApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.library.search.*" />
+          <option name="PATTERN" value="org.library.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.library.search" />
-      <option name="MAIN_CLASS_NAME" value="org.library.search.SearchBookTest" />
-      <option name="METHOD_NAME" value="shouldReturnBooksWithGivenAuthorLastName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserHelperTest.shouldReturnAUserWhenFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libraryApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.library.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.library.user" />
-      <option name="MAIN_CLASS_NAME" value="org.library.user.UserHelperTest" />
-      <option name="METHOD_NAME" value="shouldReturnAUserWhenFound" />
+      <option name="PACKAGE_NAME" value="org.library.security" />
+      <option name="MAIN_CLASS_NAME" value="org.library.security.EncodingHelperTest" />
+      <option name="METHOD_NAME" value="shouldReturnCorrespondingEncodedPassword" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserHelperTest.shouldReturnAUserWhenFound" />
-        <item itemvalue="JUnit.LoanProcessTest.userShouldBeAbleToReturnABookWhenReturningCorrectBookAndLoggedIn" />
-        <item itemvalue="JUnit.LoanManagerTest.shouldReturnedBorrowedBookBackToTheStacks" />
-        <item itemvalue="JUnit.SearchBookTest.shouldReturnBooksWithGivenAuthorLastName" />
-        <item itemvalue="JUnit.SearchBookTest.shouldReturnBooksWithGivenAuthorFirstName" />
+        <item itemvalue="JUnit.CloudManagerTest.shouldThrowExceptionWhenNoIsbnIsGiven" />
+        <item itemvalue="JUnit.CloudManagerTest.eBookShouldBeFoundToWhenCorrectIsbnInputGiven" />
+        <item itemvalue="JUnit.EncodingHelperTest" />
+        <item itemvalue="JUnit.EncodingHelperTest.shouldNotReturnEncodedPassword" />
+        <item itemvalue="JUnit.EncodingHelperTest.shouldReturnCorrespondingEncodedPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +195,8 @@
       <workItem from="1685693338698" duration="7968000" />
       <workItem from="1685721238636" duration="21472000" />
       <workItem from="1685750998477" duration="204000" />
-      <workItem from="1685784345946" duration="45640000" />
+      <workItem from="1685784345946" duration="45895000" />
+      <workItem from="1685883168223" duration="9972000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1685562181195</created>
@@ -230,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685831203315</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Prototype">
+      <created>1685837448238</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685837448238</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +260,8 @@
     <MESSAGE value="Book management" />
     <MESSAGE value="Checkout" />
     <MESSAGE value="Search engine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search engine" />
+    <MESSAGE value="Prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prototype" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/libraryApp$EncodedCredentialsTest.ic" NAME="EncodedCredentialsTest Coverage Results" MODIFIED="1685629014788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

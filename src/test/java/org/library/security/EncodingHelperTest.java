@@ -2,9 +2,15 @@ package org.library.security;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
 import org.library.user.User;
 
 public class EncodingHelperTest {
+
+    @BeforeEach
+    void setUo(){
+        EncodedCredentials.getInstance().getPasswordMatch().clear();
+    }
 
     @Test
     public void shouldAddAEncodedPasswordToTheCorrectUser() {
@@ -17,6 +23,7 @@ public class EncodingHelperTest {
         int numberOfPasswordsAfterAdding =  EncodedCredentials.getInstance().getPasswordMatch().size();
         Assert.assertNotEquals(initialNumberOfPasswords,numberOfPasswordsAfterAdding);
     }
+
     @Test
     public void shouldReturnCorrespondingEncodedPassword(){
         User user = new User();

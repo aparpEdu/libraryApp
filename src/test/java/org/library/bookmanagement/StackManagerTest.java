@@ -6,6 +6,7 @@ import org.library.author.Author;
 import org.library.book.Book;
 import org.library.book.Genre;
 import org.library.country.Country;
+import org.library.exception.MissingBookDataException;
 
 import java.time.LocalDate;
 import java.util.Set;
@@ -53,6 +54,15 @@ class StackManagerTest {
         boolean foundBook = StackManager.findPaperBookByIsbn(book.getIsbn()).isPresent();
         assertTrue(foundBook);
     }
+    @Test()
+    void shouldThrowExceptionWhenNoIsbnSetUp() {
+        Book book = new Book(); //creating a new book
+        assertThrows(MissingBookDataException.class, () -> {
+            StackedBooks.getInstance().getStackOfBooks().add(book); // adding example book
+            StackManager.findPaperBookByIsbn(book.getIsbn()); //searching for a book without giving isbn
+        });
+    }
+
 
     @Test
     void bookShouldBeRemovedFromStackWhenGivenCorrectData() {

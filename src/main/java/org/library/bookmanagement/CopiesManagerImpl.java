@@ -15,10 +15,13 @@ public class CopiesManagerImpl implements CopiesManager {
 
     @Override
     public int getNumberOfTotalCopies(Book book) {
-        int numberOfLoanedCopies = (int) LoanedBooks.getInstance().getBorrowedBooksByUsers().keySet()
-                .stream()
-                .filter(book1 -> book1.getBook().getTitle().equals(book.getTitle()))
-                .count();
-        return numberOfLoanedCopies + getNumberOfAvailableCopies(book);
+        if(StackManager.findPaperBookByIsbn(book.getIsbn()).isPresent()) {
+            int numberOfLoanedCopies = (int) LoanedBooks.getInstance().getBorrowedBooksByUsers().keySet()
+                    .stream()
+                    .filter(book1 -> book1.getBook().getTitle().equals(book.getTitle()))
+                    .count();
+            return numberOfLoanedCopies + getNumberOfAvailableCopies(book);
+        }
+       return 0;
     }
 }

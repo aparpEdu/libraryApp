@@ -6,12 +6,12 @@ import org.library.author.Author;
 import org.library.book.ElectronicBook;
 import org.library.book.Genre;
 import org.library.country.Country;
+import org.library.exception.MissingBookDataException;
 
 import java.time.LocalDate;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CloudManagerTest {
 
@@ -55,5 +55,13 @@ public class CloudManagerTest {
         CloudBooks.getInstance().getBooksInCloud().add(book); // adding example book
         boolean foundBook = CloudManager.findElectronicBookByIsbn(book.getIsbn()).isPresent();
         assertTrue(foundBook);
+    }
+    @Test
+    void shouldThrowExceptionWhenNoIsbnIsGiven() {
+        ElectronicBook book = new ElectronicBook(); //creating a new book
+        assertThrows(MissingBookDataException.class, () -> {
+            CloudBooks.getInstance().getBooksInCloud().add(book); // adding example book
+            CloudManager.findElectronicBookByIsbn(book.getIsbn());
+        });
     }
 }

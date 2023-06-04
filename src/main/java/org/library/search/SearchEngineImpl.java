@@ -24,27 +24,27 @@ public class SearchEngineImpl implements SearchEngine{
     @Override
     public Optional<List<Book>> findBooksByGenre(Set<Genre> genre) {
         return Optional.of(stackedBooks.getStackOfBooks().stream()
-                .filter(book -> book.getGenres().equals(genre))
+                .filter(book -> genre.equals(book.getGenres()))
                 .collect(Collectors.toList()));
     }
 
     @Override
     public Optional<List<Book>> findBooksByTags(Set<String> tags) {
-        return Optional.of(stackedBooks.getStackOfBooks().stream().filter(book -> book.getTags().equals(tags)).collect(Collectors.toList()));
+        return Optional.of(stackedBooks.getStackOfBooks().stream().filter(book ->tags.equals(book.getTags())).collect(Collectors.toList()));
     }
 
     @Override
     public Optional<List<Book>> findBooksByAuthorFirstName(String firstName) {
         return Optional.of(stackedBooks.getStackOfBooks().stream()
                 .filter(book -> book.getAuthors().stream()
-                        .anyMatch(author -> author.getFirstName().equals(firstName)))
+                        .anyMatch(author -> firstName.equals(author.getFirstName())))
                 .collect(Collectors.toList()));
     }
     @Override
     public Optional<List<Book>> findBooksByAuthorLastName(String lastName) {
         return Optional.of(stackedBooks.getStackOfBooks().stream()
                 .filter(book -> book.getAuthors().stream()
-                        .anyMatch(author -> author.getFirstName().equals(lastName)))
+                        .anyMatch(author -> lastName.equals(author.getLastName())))
                 .collect(Collectors.toList()));
     }
 }

@@ -17,7 +17,7 @@ class CopiesManagerImplTest {
     }
 
     @Test
-    void shouldReturnNumberOfAvailableCopies() {
+    void shouldReturnNumberOfAvailableCopiesWhenBookPresent() {
         CopiesManagerImpl copiesManager = new CopiesManagerImpl();
         Book firstBook = new Book();
         firstBook.setTitle("Top Gear 101");

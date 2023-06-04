@@ -27,6 +27,7 @@ public class AuthenticationTest {
         boolean userIsCreated = AuthenticationHelper.isUsernamePresent(usernameInput);
         Assertions.assertTrue(userIsCreated);
     }
+
     @Test
     public void userShouldNotBeSignedUpWithoutAcceptedEULA() {
         String usernameInput  = "Leonardo";

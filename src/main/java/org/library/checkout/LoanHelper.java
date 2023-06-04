@@ -2,6 +2,7 @@ package org.library.checkout;
 
 import org.library.book.Book;
 import org.library.bookmanagement.BookManager;
+import org.library.exception.MissingBookDataException;
 
 import java.time.LocalDate;
 import java.util.Optional;
@@ -20,6 +21,10 @@ public class LoanHelper {
        return LoanedBooks.getInstance().getBorrowedBooksByUsers().containsKey(book);
     }
     public static void adjustReturnDate(LoanedBook loanedBook,int numberOfDays){
-        loanedBook.setReturnDate(loanedBook.getReturnDate().plusDays(numberOfDays));
+        try {
+            loanedBook.setReturnDate(loanedBook.getReturnDate().plusDays(numberOfDays));
+        }catch (NullPointerException exception){
+          throw new MissingBookDataException("No return date specified in book!");
+        }
     }
 }
